@@ -1,0 +1,20 @@
+
+<div>
+  <button id="button">Error here!</button>
+</div>
+
+<script type="text/javascript" src="http://cors-error-3/capture.js"
+        ></script>
+<script type="text/javascript" src="http://cors-error-2/throw.js"
+        crossorigin="anonymous"
+        ></script>
+
+<script type="text/javascript">
+  var button = document.getElementById('button')
+  button.addEventListener('click', function(event) {
+    errorInLine(); // Error!
+  })
+
+  throw "Inline"
+
+</script>
